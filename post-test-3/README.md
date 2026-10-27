@@ -406,7 +406,7 @@ def uji_abstraksi():
 
 Python akan menghasilkan `TypeError` karena `tampilkan_peran()` dan `deskripsi_akun()` masih merupakan abstract method yang belum diimplementasikan pada `User`. Program menangkap error tersebut menggunakan `try/except`, sehingga bukti kegagalan tampil dengan rapi dan program dapat melanjutkan pengujian.
 
-![Screenshot bukti abstract class tidak dapat diinstansiasi](screenshot_abstraksi.png)
+![Screenshot bukti abstract class tidak dapat diinstansiasi](screenshots/ss_pengujian_oop.png)
 
 Untuk melihat pengujian ini secara langsung, jalankan program dan pilih **menu 6 — Pengujian OOP**.
 
@@ -451,7 +451,7 @@ Fungsi ini menerima objek apa pun yang menyediakan method `tampilkan_ringkasan()
 
 Kedua kelas tidak harus memiliki hubungan inheritance. Kesamaan method yang tersedia sudah cukup untuk digunakan oleh `cetak_ringkasan()`.
 
-![Screenshot output polimorfisme dan duck typing](screenshot_polimorfisme.png)
+![Screenshot output polimorfisme dan duck typing](screenshots/ss_pengujian_oop.png)
 
 # 8. Enkapsulasi, Getter, dan Setter
 
@@ -651,7 +651,7 @@ Keluar
 6. Constructor `Penyewaan` membuat objek `DetailSewa`.
 7. Program menampilkan rincian transaksi dan total biaya.
 
-![Screenshot contoh transaksi penyewaan](screenshot_penyewaan.png)
+![Screenshot contoh transaksi penyewaan](screenshots/ss_sewa_barang.png)
 
 Contoh pada screenshot menggunakan harga Rp150.000 per hari dan durasi tiga hari, sehingga total biaya adalah Rp450.000.
 
@@ -661,25 +661,25 @@ Screenshot berikut dibuat dari eksekusi program dengan data contoh. Screenshot d
 
 ## 13.1 Tampilan awal dan menu
 
-![Screenshot tampilan awal SewaKita](screenshot_menu.png)
+![Screenshot tampilan awal SewaKita](screenshots/ss_registrasi.png)
 
 ## 13.2 Bukti abstract class tidak bisa diinstansiasi
 
 Ketika menu pengujian OOP dipilih, fungsi `uji_abstraksi()` mencoba membuat objek `User` secara langsung. Python menolak pembuatan objek karena abstract method `tampilkan_peran()` dan `deskripsi_akun()` belum diimplementasikan pada kelas `User`. Error ditangkap dan pesannya dicetak.
 
-![Screenshot pengujian abstraksi](screenshot_abstraksi.png)
+![Screenshot pengujian abstraksi](screenshots/ss_pengujian_oop.png)
 
 ## 13.3 Bukti polimorfisme dan duck typing
 
 Output menunjukkan bahwa objek `Penyewa` dan `Pemilik` menghasilkan peran dan deskripsi akun yang berbeda ketika method yang sama dipanggil. Output duck typing menunjukkan bahwa `RingkasanPlatform` dan `RingkasanListing` dapat diproses melalui `cetak_ringkasan()`.
 
-![Screenshot pengujian polimorfisme dan duck typing](screenshot_polimorfisme.png)
+![Screenshot pengujian polimorfisme dan duck typing](screenshots/ss_pengujian_oop.png)
 
 ## 13.4 Bukti perhitungan transaksi
 
 Screenshot transaksi menunjukkan informasi penyewa, listing, pemilik, toko, harga per hari, durasi, dan total biaya yang dihitung oleh program.
 
-![Screenshot detail penyewaan](screenshot_penyewaan.png)
+![Screenshot detail penyewaan](screenshots/ss_sewa_barang.png)
 
 # 14. Cara Menjalankan Program
 
@@ -703,17 +703,21 @@ Di beberapa sistem, perintah menjalankan Python dapat berupa `python3 sewakita.p
 
 # 15. Struktur Folder Proyek
 
-Letakkan semua file berikut di dalam satu folder agar gambar dapat ditampilkan saat README dibuka di GitHub.
+Letakkan file program dan README di folder proyek. Semua screenshot yang disertakan dalam paket ini berada di folder `screenshots/` agar dapat ditampilkan saat README dibuka di GitHub. Jika ada class diagram atau screenshot lama lain yang ingin ditampilkan, unggah juga file tersebut dan pastikan jalurnya sesuai.
 
 ```text
 SewaKita/
 ├── sewakita.py
 ├── README.md
-├── class_diagram_sewakita.png
-├── screenshot_menu.png
-├── screenshot_abstraksi.png
-├── screenshot_polimorfisme.png
-└── screenshot_penyewaan.png
+└── screenshots/
+    ├── ss_registrasi.png
+    ├── ss_upload_barang.png
+    ├── ss_sewa_barang.png
+    ├── ss_daftar_barang.png
+    ├── ss_data_user.png
+    ├── ss_informasi_platform.png
+    ├── ss_pengujian_oop.png
+    └── ss_ganti_user.png
 ```
 
 Nama file gambar di dalam README harus sama persis dengan nama file yang diunggah. Jika gambar tidak ikut diunggah atau nama filenya berbeda, GitHub tidak dapat menampilkan gambar tersebut.
@@ -727,49 +731,49 @@ Bagian ini berisi **screenshot asli yang dikirim dari hasil menjalankan program 
 
 Pada awal program, pengguna diminta mengisi data penyewa dan pemilik. Data yang dimasukkan kemudian ditampilkan pada menu dan digunakan selama sesi program berjalan.
 
-![Screenshot registrasi penyewa dan pemilik](ss_registrasi.png)
+![Screenshot registrasi penyewa dan pemilik](screenshots/ss_registrasi.png)
 
 ### 14.2 Upload Barang/Jasa
 
 Pemilik memilih menu **1 — Upload Barang/Jasa**, lalu memasukkan nama barang, kategori, dan harga sewa per hari. Program menampilkan pesan berhasil setelah listing dibuat.
 
-![Screenshot proses upload barang dan jasa](ss_upload_barang.png)
+![Screenshot proses upload barang dan jasa](screenshots/ss_upload_barang.png)
 
 ### 14.3 Proses Penyewaan dan Perhitungan Total
 
 Penyewa memilih menu **2 — Sewa Barang/Jasa**, memilih listing, lalu memasukkan durasi sewa. Pada contoh screenshot, harga adalah Rp100 per hari dan durasi dua hari, sehingga total yang ditampilkan adalah Rp200.
 
-![Screenshot proses penyewaan](ss_sewa_barang.png)
+![Screenshot proses penyewaan](screenshots/ss_sewa_barang.png)
 
 ### 14.4 Melihat Daftar Barang/Jasa
 
 Menu **3 — Lihat Daftar Barang/Jasa** menampilkan listing yang tersedia, nama pemilik, nama toko, kategori, harga, dan status listing.
 
-![Screenshot daftar barang dan jasa](ss_daftar_barang.png)
+![Screenshot daftar barang dan jasa](screenshots/ss_daftar_barang.png)
 
 ### 14.5 Melihat Data User
 
 Menu **4 — Lihat Data User** menampilkan informasi pengguna yang sudah diregistrasi, termasuk username, platform, peran, dan deskripsi akun.
 
-![Screenshot data pengguna](ss_data_user.png)
+![Screenshot data pengguna](screenshots/ss_data_user.png)
 
 ### 14.6 Informasi Platform
 
 Menu **5 — Informasi Platform** menampilkan informasi platform, jumlah pengguna, status listing, jumlah listing, serta jumlah penyewaan.
 
-![Screenshot informasi platform](ss_informasi_platform.png)
+![Screenshot informasi platform](screenshots/ss_informasi_platform.png)
 
 ### 14.7 Pengujian Abstraksi dan Polimorfisme
 
 Menu **6 — Pengujian OOP** menampilkan bukti bahwa kelas abstrak `User` tidak bisa diinstansiasi langsung. Output juga memperlihatkan polimorfisme melalui method `tampilkan_peran()` dan `deskripsi_akun()`, duck typing melalui `cetak_ringkasan()`, serta operator overloading pada objek `BarangJasa`.
 
-![Screenshot pengujian OOP](ss_pengujian_oop.png)
+![Screenshot pengujian OOP](screenshots/ss_pengujian_oop.png)
 
 ### 14.8 Mengganti User Aktif
 
 Menu **7 — Ganti User Aktif** menampilkan daftar pengguna dan memungkinkan pengguna memilih akun yang akan menjadi user aktif.
 
-![Screenshot ganti user aktif](ss_ganti_user.png)
+![Screenshot ganti user aktif](screenshots/ss_ganti_user.png)
 
 # 16. Ringkasan Penerapan OOP
 

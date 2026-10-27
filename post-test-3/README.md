@@ -703,6 +703,9 @@ Di beberapa sistem, perintah menjalankan Python dapat berupa `python3 sewakita.p
 
 # 15. Struktur Folder Proyek
 
+Screenshot bukti program pada bagian 14.1–14.8 disimpan di folder `screenshots/`. Pastikan folder ini ikut diunggah bersama README agar gambar tampil di GitHub.
+
+
 Letakkan semua file berikut di dalam satu folder agar gambar dapat ditampilkan saat README dibuka di GitHub.
 
 ```text
@@ -727,49 +730,49 @@ Bagian ini berisi **screenshot asli yang dikirim dari hasil menjalankan program 
 
 Pada awal program, pengguna diminta mengisi data penyewa dan pemilik. Data yang dimasukkan kemudian ditampilkan pada menu dan digunakan selama sesi program berjalan.
 
-![Screenshot registrasi penyewa dan pemilik](ss_registrasi.png)
+![Screenshot registrasi penyewa dan pemilik](screenshots/ss_registrasi.png)
 
 ### 14.2 Upload Barang/Jasa
 
 Pemilik memilih menu **1 — Upload Barang/Jasa**, lalu memasukkan nama barang, kategori, dan harga sewa per hari. Program menampilkan pesan berhasil setelah listing dibuat.
 
-![Screenshot proses upload barang dan jasa](ss_upload_barang.png)
+![Screenshot proses upload barang dan jasa](screenshots/ss_upload_barang.png)
 
 ### 14.3 Proses Penyewaan dan Perhitungan Total
 
 Penyewa memilih menu **2 — Sewa Barang/Jasa**, memilih listing, lalu memasukkan durasi sewa. Pada contoh screenshot, harga adalah Rp100 per hari dan durasi dua hari, sehingga total yang ditampilkan adalah Rp200.
 
-![Screenshot proses penyewaan](ss_sewa_barang.png)
+![Screenshot proses penyewaan](screenshots/ss_sewa_barang.png)
 
 ### 14.4 Melihat Daftar Barang/Jasa
 
 Menu **3 — Lihat Daftar Barang/Jasa** menampilkan listing yang tersedia, nama pemilik, nama toko, kategori, harga, dan status listing.
 
-![Screenshot daftar barang dan jasa](ss_daftar_barang.png)
+![Screenshot daftar barang dan jasa](screenshots/ss_daftar_barang.png)
 
 ### 14.5 Melihat Data User
 
 Menu **4 — Lihat Data User** menampilkan informasi pengguna yang sudah diregistrasi, termasuk username, platform, peran, dan deskripsi akun.
 
-![Screenshot data pengguna](ss_data_user.png)
+![Screenshot data pengguna](screenshots/ss_data_user.png)
 
 ### 14.6 Informasi Platform
 
 Menu **5 — Informasi Platform** menampilkan informasi platform, jumlah pengguna, status listing, jumlah listing, serta jumlah penyewaan.
 
-![Screenshot informasi platform](ss_informasi_platform.png)
+![Screenshot informasi platform](screenshots/ss_informasi_platform.png)
 
 ### 14.7 Pengujian Abstraksi dan Polimorfisme
 
 Menu **6 — Pengujian OOP** menampilkan bukti bahwa kelas abstrak `User` tidak bisa diinstansiasi langsung. Output juga memperlihatkan polimorfisme melalui method `tampilkan_peran()` dan `deskripsi_akun()`, duck typing melalui `cetak_ringkasan()`, serta operator overloading pada objek `BarangJasa`.
 
-![Screenshot pengujian OOP](ss_pengujian_oop.png)
+![Screenshot pengujian OOP](screenshots/ss_pengujian_oop.png)
 
 ### 14.8 Mengganti User Aktif
 
 Menu **7 — Ganti User Aktif** menampilkan daftar pengguna dan memungkinkan pengguna memilih akun yang akan menjadi user aktif.
 
-![Screenshot ganti user aktif](ss_ganti_user.png)
+![Screenshot ganti user aktif](screenshots/ss_ganti_user.png)
 
 # 16. Ringkasan Penerapan OOP
 
